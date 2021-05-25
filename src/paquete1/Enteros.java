@@ -40,42 +40,6 @@ public static int factorial(int n) {
 }
 
 /**
- * Recibe un cadena y devuelve como resultado la cadena escrita al reves.
- * @param cadena es la cadena que se usa para darle el valor a resultado.
- * @return la propia cadena dada la vuelta pero atraves de la variable local resultado.
- */
-public static String alreves(String cadena) {
-		String resultado = "";
-
-		for (int i = cadena.length() - 1; i >= 0; i--) {
-			resultado = resultado + cadena.charAt(i);
-		}
-		return resultado;
-}
-/**
- * Es metodo da como resultado verdadero o falso de pendiendo de si el 
- * numero que recibe es capicua o no respectivamente; a modo de 
- * aclaracion un metodo es capicua si se escribr igual al derecho que al 
- * reves y para comprobarlo llama al metodo "al reves" con el fin de 
- * invertir el numero.
- * @param n Numero entero que se pasa ha cadena para darle la vuelta y comprobar si es o no igual.
- * @return Verdadero o falso en caso de que el numero sea o no capicua.
- */
-public static boolean capicua(int n) {
-		boolean resultado;
-		String cadena;
-
-		cadena = Integer.toString(n);
-		if (cadena.equals(alreves(cadena))) {
-			resultado = true;
-		} else {
-			resultado = false;
-		}
-
-		return resultado;
-}
-
-/**
  * Recibiendo dos enteros devuelve verdadero si el primer numero es 
  * divisible entre el segundo (dividir el primero entre el segundo da 
  * resto 0) y falso en caso contrario.
